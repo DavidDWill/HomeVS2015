@@ -3,8 +3,34 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22512.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Dependencies", "01 - Dependencies", "{FF69DA01-24C0-4DE6-8EBB-5952C5F25A68}"
+	ProjectSection(SolutionItems) = preProject
+		01 - Dependencies\Anomal.Management.snk = 01 - Dependencies\Anomal.Management.snk
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Installers", "02 - Installers", "{2DEDB580-3CC1-4C66-9B77-CC7788FF9560}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Databases", "03 - Databases", "{6D7DAC19-0210-4161-8DAB-1CF03AA4B331}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Source", "04 - Source", "{5023DA92-29D1-4CD9-8213-FD5BE374BB46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UBC.Torch.Core.Supplemental", "04 - Source\UBC.Torch.Core.Supplemental\UBC.Torch.Core.Supplemental.csproj", "{E738E2D4-648A-45B8-9E41-189B3CB49AEE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E738E2D4-648A-45B8-9E41-189B3CB49AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E738E2D4-648A-45B8-9E41-189B3CB49AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E738E2D4-648A-45B8-9E41-189B3CB49AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E738E2D4-648A-45B8-9E41-189B3CB49AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E738E2D4-648A-45B8-9E41-189B3CB49AEE} = {5023DA92-29D1-4CD9-8213-FD5BE374BB46}
 	EndGlobalSection
 EndGlobal

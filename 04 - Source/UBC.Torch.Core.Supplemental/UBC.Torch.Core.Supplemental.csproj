@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E738E2D4-648A-45B8-9E41-189B3CB49AEE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UBC.Torch.Core</RootNamespace>
+    <AssemblyName>UBC.Torch.Core.Supplemental</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\UBC.Torch.Core.Supplemental.XML</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Anomal.Management.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UBC.Torch.Core">
+      <HintPath>..\..\packages\UBC.Torch.Core.3.0.0.2586-beta\lib\net45\UBC.Torch.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Annotations\AspChildControlTypeAttribute.cs" />
+    <Compile Include="Annotations\AspDataFieldAttribute.cs" />
+    <Compile Include="Annotations\AspDataFieldsAttribute.cs" />
+    <Compile Include="Annotations\AspMethodPropertyAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaMasterLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaPartialViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcAreaViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcMasterLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcPartialViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspMvcTemplateAttribute.cs" />
+    <Compile Include="Annotations\AspMvcViewLocationFormatAttribute.cs" />
+    <Compile Include="Annotations\AspRequiredAttributeAttribute.cs" />
+    <Compile Include="Annotations\AspTypePropertyAttribute.cs" />
+    <Compile Include="Annotations\AssertionConditionAttribute.cs" />
+    <Compile Include="Annotations\AssertionConditionType.cs" />
+    <Compile Include="Annotations\AssertionMethodAttribute.cs" />
+    <Compile Include="Annotations\CollectionAccessAttribute.cs" />
+    <Compile Include="Annotations\CollectionAccessType.cs" />
+    <Compile Include="Annotations\HtmlAttributeValueAttribute.cs" />
+    <Compile Include="Annotations\HtmlElementAttributesAttribute.cs" />
+    <Compile Include="Annotations\ItemCanBeNullAttribute.cs" />
+    <Compile Include="Annotations\ItemNotNullAttribute.cs" />
+    <Compile Include="Annotations\LinqTunnelAttribute.cs" />
+    <Compile Include="Annotations\NoEnumerationAttribute.cs" />
+    <Compile Include="Annotations\NoReorder.cs" />
+    <Compile Include="Annotations\RazorHelperCommonAttribute.cs" />
+    <Compile Include="Annotations\RazorImportNamespaceAttribute.cs" />
+    <Compile Include="Annotations\RazorInjectionAttribute.cs" />
+    <Compile Include="Annotations\RazorLayoutAttribute.cs" />
+    <Compile Include="Annotations\RazorWriteLiteralMethodAttribute.cs" />
+    <Compile Include="Annotations\RazorWriteMethodAttribute.cs" />
+    <Compile Include="Annotations\RazorWriteMethodParameterAttribute.cs" />
+    <Compile Include="Annotations\RegexPatternAttribute.cs" />
+    <Compile Include="Annotations\ValueProviderAttribute.cs" />
+    <Compile Include="Annotations\XamlItemBindingOfItemsControlAttribute.cs" />
+    <Compile Include="Annotations\XamlItemsControlAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anomal.Management.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
