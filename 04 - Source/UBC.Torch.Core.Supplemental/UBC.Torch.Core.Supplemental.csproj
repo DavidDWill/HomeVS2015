@@ -54,6 +54,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="Annotations\AspChildControlTypeAttribute.cs" />
     <Compile Include="Annotations\AspDataFieldAttribute.cs" />
     <Compile Include="Annotations\AspDataFieldsAttribute.cs" />
@@ -90,6 +93,7 @@
     <Compile Include="Annotations\ValueProviderAttribute.cs" />
     <Compile Include="Annotations\XamlItemBindingOfItemsControlAttribute.cs" />
     <Compile Include="Annotations\XamlItemsControlAttribute.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

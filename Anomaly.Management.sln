@@ -13,6 +13,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Databases", "03 - Databases", "{6D7DAC19-0210-4161-8DAB-1CF03AA4B331}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Source", "04 - Source", "{5023DA92-29D1-4CD9-8213-FD5BE374BB46}"
+	ProjectSection(SolutionItems) = preProject
+		04 - Source\SolutionInfo.cs = 04 - Source\SolutionInfo.cs
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UBC.Torch.Core.Supplemental", "04 - Source\UBC.Torch.Core.Supplemental\UBC.Torch.Core.Supplemental.csproj", "{E738E2D4-648A-45B8-9E41-189B3CB49AEE}"
 EndProject
